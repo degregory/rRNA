@@ -45,7 +45,7 @@ def check_chim(query, seqs):
                         break
                 if ol_count > back:
                     back = ol_count
-                if (front + back) > length:
+                if (front + back) > (length):
                     return 1
 
     return chimcheck
@@ -84,9 +84,9 @@ for file in os.listdir():
                 except:
                     pass
                 
-                if (not ('Archaea' in species or "Bacteria" in species)) and ";" in species and not flag:
+                if (not ('Archaea' in species or "Bacteria" in species)) and ";" in species:
                     if not check_chim(seq[1], seqs):
-                        flag = "u"
+                        flag += "u"
                         u_count += 1
                 
                 
@@ -101,9 +101,9 @@ for file in os.listdir():
                 if '/ Bacteria' in species:
                     species = 'Archaea/Bacteria' 
                 if flag and not ('Archaea' in species or "Bacteria" in species) and ";" in species:
-                    species = f"{seq[1]}\t{species}"
+                    species = f"{flag}\t{seq[1]}\t{species}"
                 else:
-                    species = f"\t{species}"
+                    species = f"\t\t{species}"
                 try:
                     samps_dict[species]
                 except:
@@ -132,37 +132,40 @@ print(u_count)
 
 if all_species:
     with open('rRNA_Species.tsv', "w") as rs_fh:
-        rs_fh.write("Sequence\tTaxonomy\tTax Level\tPerfect hits\tpos samps\tper pos samps")
+        rs_fh.write("flag\tSequence\tTaxonomy\tTax Level\tPerfect hits\tpos samps\tper pos samps")
         rs_fh.write("\tpos reads\tper pos reads")
 
         for samps in Species_dict_dict:
             rs_fh.write(f"\t{samps}({Species_dict_dict[samps]['total']})\t")
         rs_fh.write("\n")
-        rs_fh.write("\t\t\t\t\t\t\t")
+        rs_fh.write("\t\t\t\t\t\t\t\t")
         for samps in Species_dict_dict:
             rs_fh.write(f"\tCount\tAbundance")
         rs_fh.write("\n")
         sorted_species = sorted(all_species, key=lambda x: " ".join(x.split("\t")[::-1]))
         for spec in sorted_species:
             level = spec.split("\t")[-1].split('; ')
+
+                
             if len(level) > 1 and not "_" in level[-1]:
                 level = "Species"
             elif "species_" in spec:
                 level = "Species"
             else:
                 level = level[-1].split("_")[0]
+                
             if level == 'clade':
                 cc = 0
                 for entry in spec.split('; ')[::-1]:
                     if "clade_" in entry:
                         cc += 1
                     else:
-                        level = entry.split("_")[0].strip()+f"({cc})"
+                        level = entry.split("\t")[-1].split("_")[0].strip()+f"({cc})"
                         break
             rs_fh.write(f"{spec}\t{level}")
             
             perfect = 0
-            if hit_dict[spec][1] + hit_dict[spec][1] > 0:
+            if hit_dict[spec][1] > 0:
                 perfect = 1
             rs_fh.write(f"\t{perfect}\t{len(set(samps_dict[spec][0]))}\t{len(set(samps_dict[spec][1]))}")
             rs_fh.write(f"\t{hit_dict[spec][0]}\t{hit_dict[spec][1]}")
