@@ -45,7 +45,7 @@ def check_chim(query, seqs):
                         break
                 if ol_count > back:
                     back = ol_count
-                if (front + back) > (length + 9):
+                if (front + back) > length:
                     return 1
 
     return chimcheck
@@ -85,7 +85,7 @@ for file in os.listdir():
                     pass
                 
                 if (not ('Archaea' in species or "Bacteria" in species)) and ";" in species and not flag:
-                    if check_chim(seq[1], seqs):
+                    if not check_chim(seq[1], seqs):
                         flag = "u"
                         u_count += 1
                 
