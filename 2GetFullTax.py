@@ -46,5 +46,6 @@ if tax_ids:
             for result in ncbi_results:
                 full_tax = [(level['Rank'], level['ScientificName']) for level in result['LineageEx'] if level['Rank']]
                 full_tax = "; ".join(["_".join(entry) for entry in full_tax]) + f"; {result['ScientificName']}"
+                full_tax = full_tax.replace("no rank_", "clade_")
                 # fulltax_dict[result['TaxId']] = full_tax
                 out_fh.write(f"{result['TaxId']}\t{full_tax}\n")

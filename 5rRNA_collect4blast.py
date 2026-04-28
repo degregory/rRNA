@@ -1,6 +1,8 @@
 #!/bin/env python3
 
 import os
+import pandas as pd
+import numpy as nm
 
 seq2fulltax_file = '/mnt/c/Weekly_MiSeq/rRNA/seq2fulltax.tsv'
 
@@ -12,6 +14,33 @@ if os.path.isfile(seq2fulltax_file):
             line = line.strip().split("\t")
             seq2fulltax_dict[line[0]] = (line[1], line[2], line[3])
 print(len(seq2fulltax_dict))
+
+u_dict = {}
+
+
+for file in os.listdir():
+    if file.endswith("al.fa"):
+        
+        if os.path.getsize(file) == 0:
+            continue
+        samp_name = file.split(".")[0]
+        u_dict[samp_name] = []
+        al_dict = {}
+        with open(file, "r") as al_in:
+            seqs = al_in.read().split(">")
+            for seq in seqs:
+                if seq:
+                    seq = seq.split("\n")
+                    al_dict[seq[0]] = "".join(seq[1:])
+        al_df = pd.DataFrame.from_dict(al_dict, orient="index")
+        al_df = al_df.iloc[:, 0].str.split("", expand=True)
+        al_df = al_df.iloc[:, 1:]
+        for cn in al_df.columns:
+            counts = al_df[cn].value_counts()
+            uniqs = counts[counts == 1].index.tolist()
+            u_dict[samp_name] += al_df[al_df[cn].isin(uniqs)].index.tolist()
+
+
 
 hit_dict = {}
 samps_dict = {}
@@ -27,26 +56,31 @@ def check_chim(query, seqs):
     back = 0
     length = len(query)
     for seq in seqs:
-        if seq:
-            if not query == seq[1]:
-                ol_count = 0
-                for i in range(0, min(length, len(seq[1]))):
-                    if seq[1][i] == query[i]:
-                        ol_count += 1
-                    else:
-                        break
-                if ol_count > front:
-                    front = ol_count
-                ol_count = 0
-                for i in range(1, min(length, len(seq[1]))):
-                    if seq[1][-i] == query[-i]:
-                        ol_count += 1
-                    else:
-                        break
-                if ol_count > back:
-                    back = ol_count
-                if (front + back) > (length):
-                    return 1
+        if seq and not query == seq[1]:
+            ol_count = 0
+            for i in range(0, min(length, len(seq[1]))):
+                if seq[1][i] == query[i]:
+                    ol_count += 1
+                else:
+                    break
+            if ol_count > front:
+                front = ol_count
+            ol_count = 0
+            for i in range(1, min(length, len(seq[1]))):
+                if seq[1][-i] == query[-i]:
+                    ol_count += 1
+                else:
+                    break
+            if ol_count > back:
+                back = ol_count
+            if (front + back) > (length):
+                return 1
+
+    squery = query[front:-back]
+    for seq in seqs:
+        if seq and not query == seq[1]:
+            if squery in seq[1]:
+                return 1
 
     return chimcheck
 
@@ -65,15 +99,13 @@ for file in os.listdir():
                 if seqs[i]:
                     seq = seqs[i].split("\n")
                     seqs[i] = (seq[0], ''.join(seq[1:]))
-                    
+
             for seq in seqs:
                 if not seq:
                     continue
-                # seq = seq.split("\n")
-                # seq[1] = ''.join(seq[1:])
                 count = int(seq[0].split("size=")[1])
                 total += count
-                
+
                 species = "No match"
                 flag = ''
                 mixed = ''
@@ -83,14 +115,15 @@ for file in os.listdir():
                     mixed = seq2fulltax_dict[seq[1]][1]
                 except:
                     pass
-                
+
                 if (not ('Archaea' in species or "Bacteria" in species)) and ";" in species:
-                    if not check_chim(seq[1], seqs):
+                    # if not check_chim(seq[1], seqs):
+                    if seq[0] in u_dict[samp_name] and not check_chim(seq[1], seqs):
                         flag += "u"
                         u_count += 1
-                
-                
-                
+
+
+
                 out_fh.write(f"{flag}\t{mixed}\t{species}\t{seq[0]}\t{seq[1]}\n")
                 if species == "No match":
                     no_hits[seq[1]] = 1
@@ -99,7 +132,7 @@ for file in os.listdir():
                     if ": " in ss[-1]:
                         species = "; ".join(ss[:-1])
                 if '/ Bacteria' in species:
-                    species = 'Archaea/Bacteria' 
+                    species = 'Archaea/Bacteria'
                 if flag and not ('Archaea' in species or "Bacteria" in species) and ";" in species:
                     species = f"{flag}\t{seq[1]}\t{species}"
                 else:
@@ -114,7 +147,7 @@ for file in os.listdir():
                     hit_dict[species] = [0, 0]
                 hit_dict[species][0] += count
                 samps_dict[species][0].append(file)
-                if flag == "p":
+                if "p" in flag:
                     hit_dict[species][1] += count
                     samps_dict[species][1].append(file)
                     try:
@@ -146,14 +179,14 @@ if all_species:
         for spec in sorted_species:
             level = spec.split("\t")[-1].split('; ')
 
-                
+
             if len(level) > 1 and not "_" in level[-1]:
                 level = "Species"
             elif "species_" in spec:
                 level = "Species"
             else:
                 level = level[-1].split("_")[0]
-                
+
             if level == 'clade':
                 cc = 0
                 for entry in spec.split('; ')[::-1]:
@@ -163,7 +196,7 @@ if all_species:
                         level = entry.split("\t")[-1].split("_")[0].strip()+f"({cc})"
                         break
             rs_fh.write(f"{spec}\t{level}")
-            
+
             perfect = 0
             if hit_dict[spec][1] > 0:
                 perfect = 1

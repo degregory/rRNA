@@ -106,7 +106,7 @@ with open(all12s, "a") as out_fh, open("conflicts.tsv", "w") as conflicts:
                                     domains[line[10]] += 1
                                 except KeyError:
                                     domains[line[10]] = 1
-                            if len(taxinfs) > 1 and domains["Eukaryota"] > .05 * sum(domains.values()):
+                            if len(taxinfs) > 1 and len(taxinfs) < 9 and domains["Eukaryota"] > .05 * sum(domains.values()):
                                 
                                 for taxinf in taxinfs:
                                     conflicts.write(f"{counter}\t{seq}\t{' '.join(samp_dict[seq])}\t{taxinf}\t{taxinfs[taxinf]}\t")
