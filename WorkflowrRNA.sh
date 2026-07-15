@@ -3,17 +3,17 @@
 echo '===================================================================='
 max_children=8
 
-# for file in *_R1_001.fastq.gz
-# do
-	# Sampid=$(echo $file | rev | cut -d "_" -f 3- | rev)
-	# if [[ -f ${Sampid}_R2_001.fastq.gz ]]
-	# then
-		# bash bbmerge.sh in1=$file in2=${Sampid}_R2_001.fastq.gz  out=$Sampid.merge.fq &>> $Sampid.mergestats.txt
-	# else
-		# echo "unpaired file ${file}"
-	# fi
+for file in *_R1_001.fastq.gz
+do
+	Sampid=$(echo $file | rev | cut -d "_" -f 3- | rev)
+	if [[ -f ${Sampid}_R2_001.fastq.gz ]]
+	then
+		bash bbmerge.sh in1=$file in2=${Sampid}_R2_001.fastq.gz  out=$Sampid.merge.fq &>> $Sampid.mergestats.txt
+	else
+		echo "unpaired file ${file}"
+	fi
 
-# done
+done
 
 for file in *.merge.fq
 do
@@ -51,10 +51,20 @@ do
 	cutadapt -e .3 -g ^GTCGGTAAAACTCGTGCCAGC -o ${Sampid}.cut1.fa $file > ${Sampid}.cut.info
 	cutadapt -e .3 -a CATAGTGGGGTATCTAATCCCAGTTTG'$' -o ${Sampid}.cut.fa $Sampid.cut1.fa >> ${Sampid}.cut.info
 	
+	elif [[ $file == *INV* ]]
+	then
+	echo $Sampid INV
+	cutadapt -e .3 -g ^CCAGCASCYGCGGTAATTCC -o ${Sampid}.cut1.fa $file > ${Sampid}.cut.info
+	cutadapt -e .3 -g ^ACTTTCGTTCTTGATYRA -o ${Sampid}.cut2.fa ${Sampid}.cut1.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a GGAATTACCGCRGSTGCTGG'$' -o ${Sampid}.cut3.fa $Sampid.cut2.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a TYRATCAAGAACGAAAGT'$' -o ${Sampid}.cut.fa $Sampid.cut3.fa >> ${Sampid}.cut.info
+	
 	else
 	echo $Sampid 'base'
 	cutadapt -e .3 -g ^ACTGGGATTAGATACCCC -o ${Sampid}.cut1.fa $file > ${Sampid}.cut.info
-	cutadapt -e .3 -a CTAGAGGAGCCTGTTCTA'$' -o ${Sampid}.cut.fa $Sampid.cut1.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -g ^TAGAACAGGCTCCTCTAG -o ${Sampid}.cut2.fa ${Sampid}.cut1.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a CTAGAGGAGCCTGTTCTA'$' -o ${Sampid}.cut3.fa $Sampid.cut2.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a GGGGTATCTAATCCCAGT'$' -o ${Sampid}.cut.fa $Sampid.cut3.fa >> ${Sampid}.cut.info
 	fi
 	python3 /mnt/c/Weekly_MiSeq/dereprr.py ${Sampid}.cut.fa $Sampid.dereprr.fa 8 &>>  ${Sampid}_derepinfo.txt
 
