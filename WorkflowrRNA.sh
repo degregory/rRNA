@@ -3,12 +3,26 @@
 echo '===================================================================='
 max_children=8
 
+eval "$(conda shell.bash hook)"
+conda activate fastp
+
+
+fastqs=()
+if [ ! -d ../Merged ]
+	then
+		mkdir ../Merged
+fi
+
 for file in *_R1_001.fastq.gz
 do
 	Sampid=$(echo $file | rev | cut -d "_" -f 3- | rev)
 	if [[ -f ${Sampid}_R2_001.fastq.gz ]]
 	then
-		bash bbmerge.sh in1=$file in2=${Sampid}_R2_001.fastq.gz  out=$Sampid.merge.fq &>> $Sampid.mergestats.txt
+		
+		
+		fastp -i $file -I ${Sampid}_R2_001.fastq.gz -o ${Sampid}_R1.qc.fastq.gz -O ${Sampid}_R2.qc.fastq.gz -j $Sampid.fp.json -h $Sampid.fp.html &>> $Sampid.fp.txt &&
+		bash bbmerge.sh in1=${Sampid}_R1.qc.fastq.gz in2=${Sampid}_R2.qc.fastq.gz  out=$Sampid.merge.fq &>> $Sampid.mergestats.txt &&
+		mv ${Sampid}_R*_001.fastq.gz ../Merged/
 	else
 		echo "unpaired file ${file}"
 	fi
@@ -58,6 +72,22 @@ do
 	cutadapt -e .3 -g ^ACTTTCGTTCTTGATYRA -o ${Sampid}.cut2.fa ${Sampid}.cut1.fa >> ${Sampid}.cut.info
 	cutadapt -e .3 -a GGAATTACCGCRGSTGCTGG'$' -o ${Sampid}.cut3.fa $Sampid.cut2.fa >> ${Sampid}.cut.info
 	cutadapt -e .3 -a TYRATCAAGAACGAAAGT'$' -o ${Sampid}.cut.fa $Sampid.cut3.fa >> ${Sampid}.cut.info
+	
+	elif [[ $file == *MCJ27572758* ]]
+	then
+	echo $Sampid MCJ27572758 
+	cutadapt -e .3 -g ^CCAGCASCYGCGGTAATTCC -o ${Sampid}.cut1.fa $file > ${Sampid}.cut.info
+	cutadapt -e .3 -g ^ACTTTCGTTCTTGATYRA -o ${Sampid}.cut2.fa ${Sampid}.cut1.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a GGAATTACCGCRGSTGCTGG'$' -o ${Sampid}.cut3.fa $Sampid.cut2.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a TYRATCAAGAACGAAAGT'$' -o ${Sampid}.cut.fa $Sampid.cut3.fa >> ${Sampid}.cut.info
+	
+	elif [[ $file == *MCJ27652766* ]]
+	then
+	echo $Sampid MCJ27652766 
+	cutadapt -e .3 -g ^GGGCAATCCTGAGCCAA -o ${Sampid}.cut1.fa $file > ${Sampid}.cut.info
+	cutadapt -e .3 -g ^CCATTGAGTCTCTGCACCTATC -o ${Sampid}.cut2.fa ${Sampid}.cut1.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a TTGGCTCAGGATTGCCC'$' -o ${Sampid}.cut3.fa $Sampid.cut2.fa >> ${Sampid}.cut.info
+	cutadapt -e .3 -a GATAGGTGCAGAGACTCAATGG'$' -o ${Sampid}.cut.fa $Sampid.cut3.fa >> ${Sampid}.cut.info
 	
 	else
 	echo $Sampid 'base'
