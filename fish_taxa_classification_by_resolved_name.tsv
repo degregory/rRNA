@@ -1,0 +1,186 @@
+taxon	common name	category	notes	source
+Acipenseridae	Sturgeons	Ambiguous	Includes wild native sturgeons and species farmed for caviar and meat. Source cannot be resolved at family level.	Froese & Pauly 2021
+Anguilla	Freshwater eel	Ambiguous	"Eel farming accounted for 95% of global Anguilla production in 2013, but American eel is native and wild along the US Atlantic coast. Source cannot be resolved at genus level."	Shiraishi & Crook 2015
+Atherinopsidae	New World silversides	Ambiguous	"Includes marine species, such as jacksmelt, and freshwater species, such as inland silverside. Habitat cannot be resolved at family level."	Froese & Pauly 2021
+Barbonymus altus	Red-tailed tinfoil barb	Ambiguous	Native to Southeast Asia and sold in the aquarium trade. No established US population.	Froese & Pauly 2021
+Channa	Snakehead	Ambiguous	"Sold as imported food fish, and introduced wild populations occur in parts of the US. Source cannot be resolved at genus level."	Froese & Pauly 2021; USGS NAS
+Cichlidae	Cichlids	Ambiguous	"Includes farmed tilapia and wild and ornamental cichlids, some with introduced wild populations in southern states. Source cannot be resolved at family level."	Froese & Pauly 2021
+Dormitator latifrons	Pacific fat sleeper	Ambiguous	Native to coastal fresh and brackish waters of the eastern Pacific from southern California to Peru. Farmed commercially in Ecuador and also caught wild.	Froese & Pauly 2021
+Gobionidae	Gudgeons	Ambiguous	Includes wild species and species farmed in Asia. Source cannot be resolved at family level.	Froese & Pauly 2021
+Ictalurus	Catfish	Ambiguous	Channel catfish (I. punctatus) is the main US freshwater aquaculture species and is also widespread in the wild. Source cannot be resolved at genus level.	Froese & Pauly 2021
+Morone chrysops	White bass	Ambiguous	"A wild freshwater fish, but also the maternal parent of sunshine bass, the main farmed hybrid striped bass. Because 12S is mitochondrial, wild white bass and farmed hybrids cannot be separated."	Froese & Pauly 2021; McGinty & Hodson 2008
+Oncorhynchus	Pacific salmon and trout	Ambiguous	Includes wild Pacific salmon and farmed rainbow trout. Source cannot be resolved at genus level.	Froese & Pauly 2021
+Ophichthys cuchia	Gangetic mud eel	Ambiguous	Native to South and Southeast Asia and sold in some US Asian markets. Both wild and farmed supply exist. No established US population.	Froese & Pauly 2021
+Polydactylus sexfilis	Sixfinger threadfin	Ambiguous	"Native to Hawaii, where it is caught wild and was farmed in offshore pens until 2012."	Froese & Pauly 2021
+Salmonidae	"Salmon, trout, and char"	Ambiguous	Includes wild and farmed salmon and trout. Source cannot be resolved at family level.	Froese & Pauly 2021
+Solea senegalensis	Senegalese sole	Ambiguous	"Not native to the US. Farmed in Spain and Portugal, but a wild fishery also exists in its native range."	Froese & Pauly 2021; Morais et al. 2016; Dinis et al. 1999
+Xenocyprididae	Carp and minnow family	Ambiguous	"Includes grass, silver, and bighead carp. Includes farmed species and invasive wild populations in the Mississippi and Missouri River basins."	Froese & Pauly 2021; USGS NAS
+Dicentrarchus labrax	European seabass	Aquaculture	Farmed in the Mediterranean and imported to the US. No wild US population.	Bagni 2005
+Labeo	Labeo carps	Aquaculture	"Includes rohu and catla, which are widely farmed in South Asia and imported to the US. No wild US population."	Jena 2006; Jena 2009
+Labeo catla	Catla	Aquaculture	"Farmed in South Asia in polyculture with rohu and mrigal, and imported to the US. No wild US population."	Jena 2009
+Larimichthys crocea	Large yellow croaker	Aquaculture	"Wild stocks collapsed, and most supply is now farmed in China. Imported to the US."	Liu & Sadovy de Mitcheson 2008
+Lates calcarifer	Barramundi	Aquaculture	Farmed in Asia and Australia and imported to the US. No wild US population.	Rimmer 2009
+Oncorhynchus mykiss	Rainbow trout	Aquaculture	Most US supply is farmed. Wild rainbow trout and steelhead populations also occur in the US.	Illinois-Indiana Sea Grant 2021
+Oreochromis niloticus	Nile tilapia	Aquaculture	Most US supply is farmed and imported. Introduced wild populations occur in several southern states.	Rakocy 2005; USGS NAS
+Pagrus major	Red seabream	Aquaculture	"Farmed in Japan, where aquaculture production exceeds the wild catch. Imported to the US."	Kato 2023
+Pangasiidae	Shark catfishes	Aquaculture	"Includes swai and basa, farmed in Vietnam and imported to the US as fillets. No wild US population."	Griffiths et al. 2010
+Salmo salar	Atlantic salmon	Aquaculture	"Only farmed Atlantic salmon is sold in the US, and commercial fishing for wild Atlantic salmon is prohibited."	NOAA Fisheries 2024
+Seriola	Amberjack	Aquaculture	"Most supply is farmed, mainly Japanese amberjack (S. quinqueradiata) in Japan. A wild US fishery for greater amberjack (S. dumerili) also exists."	Froese & Pauly 2021; Nakada 2008
+Siniperca	Mandarin fish	Aquaculture	Farmed in China and imported to the US. No wild US population.	Min 2013
+Sparus aurata	Gilt-head bream	Aquaculture	Farmed in the Mediterranean and imported to the US. No wild US population.	Colloca & Cerasi 2005
+Ambloplites constellatus	Ozark bass	Freshwater	Wild native fish of the Ozark region. Not farmed.	Froese & Pauly 2021
+Ameiurus	Bullhead catfish	Freshwater	Wild native North American catfishes. Not farmed.	Froese & Pauly 2021
+Ameiurus catus	White catfish	Freshwater	Wild native catfish. Not farmed.	Froese & Pauly 2021
+Ameiurus natalis	Yellow bullhead	Freshwater	Wild native catfish. Not farmed.	Froese & Pauly 2021
+Aplodinotus grunniens	Freshwater drum	Freshwater	Wild native fish. Not farmed.	Froese & Pauly 2021
+Awaous	Goby	Freshwater	Native Hawaiian stream goby. Adults live in fresh water.	Froese & Pauly 2021
+Campostoma	Stoneroller	Freshwater	Wild native minnows. Not a food fish.	Froese & Pauly 2021
+Catostomidae	Suckers	Freshwater	Wild native freshwater fishes. Not farmed.	Froese & Pauly 2021
+Clarias fuscus	Hong Kong catfish	Freshwater	Introduced to Hawaii as a food fish and established in the wild there.	Froese & Pauly 2021; USGS NAS
+Cyprinella lutrensis	Red shiner	Freshwater	Native to the central US and introduced in parts of the western US. Not a food fish.	Froese & Pauly 2021
+Eleotris acanthopomus	Spinycheek sleeper	Freshwater	Native to West and South Pacific streams. Adults live in fresh water.	Froese & Pauly 2021
+Esox	Pike	Freshwater	Wild and stocked sport fish. Not farmed for food in the US.	Froese & Pauly 2021
+Gambusia	Mosquitofish	Freshwater	Native to the southeastern US and widely stocked for mosquito control. Not a food fish.	USGS NAS
+Gambusia holbrooki	Eastern mosquitofish	Freshwater	Native to the southeastern US and widely introduced elsewhere for mosquito control. Not a food fish.	Froese & Pauly 2021
+Lepisosteus	Gar	Freshwater	Wild native fishes. Not farmed.	Froese & Pauly 2021
+Lepomis	Sunfish	Freshwater	Includes bluegill and pumpkinseed. Wild and stocked sport fish. Small-scale aquaculture exists.	Froese & Pauly 2021
+Lepomis cyanellus	Green sunfish	Freshwater	Wild native fish. Not farmed.	Froese & Pauly 2021
+Leuciscidae	Minnows	Freshwater	Wild native freshwater fishes. Not farmed for food.	Froese & Pauly 2021
+Luxilus cornutus	Common shiner	Freshwater	Wild native minnow. Not farmed.	Froese & Pauly 2021
+Micropterus	Black bass	Freshwater	"Wild and stocked sport fish. Largemouth bass is widely farmed for food, mainly in China."	Froese & Pauly 2021; Yu et al. 2024
+Micropterus dolomieu	Smallmouth bass	Freshwater	Wild native sport fish. Not farmed for food.	Froese & Pauly 2021
+Micropterus henshalli	Alabama bass	Freshwater	Wild native sport fish. Not farmed for food.	Froese & Pauly 2021
+Micropterus salmoides	Largemouth bass	Freshwater	"Wild native sport fish, also stocked for sport fishing. Widely farmed for food, mainly in China."	Froese & Pauly 2021; Yu et al. 2024
+Morone americana	White perch	Freshwater	Wild native fish of fresh and estuarine waters. Not farmed.	Froese & Pauly 2021
+Nocomis	Chub	Freshwater	Wild native minnows. Not farmed.	Froese & Pauly 2021
+Oncorhynchus clarkii	Cutthroat trout	Freshwater	Wild native trout. Not commercially farmed.	Froese & Pauly 2021
+Paranotropis	Shiner minnow	Freshwater	"Minnow genus (Leuciscidae), as named in NCBI Taxonomy. Wild freshwater fish."	Schoch et al. 2020
+Perca flavescens	Yellow perch	Freshwater	"Mostly wild, from Great Lakes and Midwest fisheries. Small-scale aquaculture exists in the Midwest."	Froese & Pauly 2021
+Polyodon spathula	American paddlefish	Freshwater	Wild native fish of the Mississippi River basin. A small caviar aquaculture industry also exists.	Froese & Pauly 2021
+Pomoxis	Crappie	Freshwater	Wild and stocked sport fish. Not farmed for food.	Froese & Pauly 2021
+Pomoxis annularis	White crappie	Freshwater	Wild and stocked sport fish. Not farmed for food.	Froese & Pauly 2021
+Pomoxis nigromaculatus	Black crappie	Freshwater	Wild and stocked sport fish. Not farmed for food.	Froese & Pauly 2021
+Ptychocheilus	Pikeminnow	Freshwater	Wild native minnows of western US rivers. Not farmed.	Froese & Pauly 2021
+Pylodictis olivaris	Flathead catfish	Freshwater	Native to the Mississippi and Gulf drainages and introduced in some Atlantic coast rivers. Not farmed.	Froese & Pauly 2021
+Sander vitreus	Walleye	Freshwater	Mostly wild and stocked sport fish. Small-scale aquaculture exists in the Midwest.	Froese & Pauly 2021
+Scaphirhynchus	River sturgeons	Freshwater	Wild native fishes of the Mississippi River basin.	Froese & Pauly 2021
+Thoburnia rhothoeca	Torrent sucker	Freshwater	Wild native fish of Appalachian streams. Not farmed.	Froese & Pauly 2021
+Abudefduf sordidus	Blackspot sergeant	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Acanthocybium solandri	Wahoo	Marine	Wild pelagic fishery. Not farmed.	Froese & Pauly 2021
+Acanthurus	Surgeonfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Acanthurus guttatus	Whitespotted surgeonfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Acanthurus lineatus	Lined surgeonfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Acanthurus olivaceus	Orangeband surgeonfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Acanthurus triostegus	Convict tang	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Acanthurus xanthopterus	Yellowfin surgeonfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Albula argentea	Longjaw bonefish	Marine	Wild sport fish of the western and South Pacific. Not farmed.	Froese & Pauly 2021
+Amphistichus	Surfperch	Marine	Wild California surf fishes. Not farmed.	Froese & Pauly 2021
+Anoplopoma fimbria	Sablefish	Marine	Wild Pacific fishery. Small-scale aquaculture exists.	Froese & Pauly 2021
+Beryx splendens	Splendid alfonsino	Marine	Wild deep-sea fishery. Not farmed.	Froese & Pauly 2021
+Brevoortia	Menhaden	Marine	"Wild fishery for fish meal, oil, and bait. Not farmed."	Froese & Pauly 2021
+Calotomus carolinus	Stareye parrotfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Carangidae	Jacks	Marine	"Mostly wild marine fisheries. Some species, such as amberjacks (Seriola) and pompanos, are farmed."	Froese & Pauly 2021
+Caranx	Trevally	Marine	Wild reef and coastal fishes. Not farmed.	Froese & Pauly 2021
+Caranx ignobilis	Giant trevally	Marine	Wild reef and coastal fish. Not farmed.	Froese & Pauly 2021
+Centropristis striata	Black sea bass	Marine	Wild Atlantic fishery. Not commercially farmed.	Froese & Pauly 2021
+Cephalopholis argus	Peacock grouper	Marine	"Introduced to Hawaii and now established on Hawaiian reefs. Wild, not farmed."	Froese & Pauly 2021
+Chanos chanos	Milkfish	Marine	"Native to Hawaii and the Indo-Pacific, with rare records in California. Wild in the US. Farmed elsewhere, mainly in Southeast Asia."	Froese & Pauly 2021
+Chlorurus	Parrotfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Cirrhitus pinnulatus	Stocky hawkfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Citharichthys xanthostigma	Longfin sanddab	Marine	Wild California fishery. Not farmed.	Froese & Pauly 2021
+Clupeidae	Herrings and shads	Marine	"Includes menhaden, herring, and shad. Wild fisheries. Not farmed."	Froese & Pauly 2021
+Coryphaena hippurus	Mahi-mahi	Marine	Wild pelagic fishery. Not farmed.	Froese & Pauly 2021
+Cynoscion	Weakfish	Marine	Includes weakfish and seatrouts. Wild Atlantic and Gulf fisheries. Not farmed.	Froese & Pauly 2021
+Decapterus macrosoma	Shortfin scad	Marine	Wild Indo-Pacific fishery. Not farmed.	Froese & Pauly 2021
+Elops saurus	Ladyfish	Marine	Wild coastal and estuarine sport fish. Not farmed.	Froese & Pauly 2021
+Embiotoca lateralis	Striped surfperch	Marine	Wild California nearshore fish. Not farmed.	Froese & Pauly 2021
+Encrasicholina punctifer	Buccaneer anchovy	Marine	Wild Indo-Pacific fishery. Not farmed.	Froese & Pauly 2021
+Engraulis	Anchovy	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Eopsetta jordani	Petrale sole	Marine	Wild Pacific fishery. Not farmed.	Froese & Pauly 2021
+Epinephelus morio	Red grouper	Marine	Wild Gulf of Mexico fishery. Not farmed.	Froese & Pauly 2021
+Etelis	Deepwater snapper	Marine	Wild deepwater fishery. Not farmed.	Froese & Pauly 2021
+Etelis carbunculus	Deepwater red snapper	Marine	Wild Pacific and Hawaiian fishery. Not farmed.	Froese & Pauly 2021
+Eugerres	Mojarra	Marine	Wild coastal and estuarine fishes. Not farmed.	Froese & Pauly 2021
+Exocoetidae	Flying fish	Marine	Wild pelagic fishes. Not farmed.	Froese & Pauly 2021
+Gadidae	Cod family	Marine	"Includes Atlantic cod, haddock, and Alaska pollock. US supply is mostly wild-caught."	Froese & Pauly 2021
+Glyptocephalus	Witch flounder	Marine	Wild marine fishery. Not farmed.	Froese & Pauly 2021
+Helicolenus	Rosefish	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Hexagrammos decagrammus	Kelp greenling	Marine	Wild Pacific Northwest fishery. Not farmed.	Froese & Pauly 2021
+Iniistius pavo	Peacock razorfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Istiophoridae	Billfishes	Marine	Includes marlins and sailfish. Wild fishery. Not farmed.	Froese & Pauly 2021
+Kuhlia sandvicensis	Reticulated flagtail	Marine	"Wild Pacific nearshore fish, including Hawaii. Not farmed."	Froese & Pauly 2021
+Kuhlia xenura	Hawaiian flagtail	Marine	Endemic Hawaiian nearshore and stream-mouth fish. Not farmed.	Froese & Pauly 2021
+Kyphosus	Sea chub	Marine	Wild reef and coastal fishes. Not farmed.	Froese & Pauly 2021
+Lachnolaimus maximus	Hogfish	Marine	Wild reef fishery of Florida and the Caribbean. Not farmed.	Froese & Pauly 2021
+Lophius	Monkfish	Marine	Wild Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Lutjanus	Snapper	Marine	Mostly wild reef and coastal fishes. Some snappers are farmed in Asia.	Froese & Pauly 2021
+Lutjanus analis	Mutton snapper	Marine	Wild western Atlantic fishery. Not commercially farmed.	Froese & Pauly 2021
+Lutjanus fulvus	Blacktail snapper	Marine	Wild Indo-Pacific reef fish. Not farmed.	Froese & Pauly 2021
+Lutjanus griseus	Gray snapper	Marine	Wild western Atlantic coastal fish. Not farmed.	Froese & Pauly 2021
+Mallotus villosus	Capelin	Marine	"Wild fishery for bait, oil, and roe. Not farmed."	Froese & Pauly 2021
+Melichthys	Triggerfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Menidia menidia	Atlantic silverside	Marine	Wild coastal and estuarine forage fish. Not farmed.	Froese & Pauly 2021
+Menticirrhus	Kingfish	Marine	Wild Atlantic surf fishes. Not farmed.	Froese & Pauly 2021
+Merluccius	Hake	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Merluccius bilinearis	Silver hake	Marine	Wild Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Micropogonias undulatus	Atlantic croaker	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Microstomus pacificus	Pacific Dover sole	Marine	Wild US West Coast fishery. Not farmed.	Froese & Pauly 2021
+Monotaxis grandoculis	Bigeye emperor	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Morone saxatilis	Striped bass	Marine	"Mostly wild. Farmed hybrid striped bass mostly carry white bass mitochondria, so they are not detected as striped bass."	Froese & Pauly 2021; McGinty & Hodson 2008
+Mugil	Mullet	Marine	Wild coastal fishes. Not farmed in the US.	Froese & Pauly 2021
+Mugil cephalus	Flathead grey mullet	Marine	Wild coastal and estuarine fish. Not farmed in the US.	Froese & Pauly 2021
+Mulloidichthys	Goatfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Mulloidichthys pfluegeri	Orange goatfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Myripristis	Soldierfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Myripristis amaena	Brick soldierfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Naso lituratus	Orangespine unicornfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Naso unicornis	Bluespine unicornfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Neomyxus leuciscus	Sharpnose mullet	Marine	Wild Hawaiian and Pacific fish. Not farmed.	Froese & Pauly 2021
+Ocyurus chrysurus	Yellowtail snapper	Marine	Wild reef and coastal fishery. Not farmed.	Froese & Pauly 2021
+Oncorhynchus kisutch	Coho salmon	Marine	Mostly wild-caught in the US. Coho salmon is farmed in Chile.	Froese & Pauly 2021
+Oncorhynchus tshawytscha	Chinook salmon	Marine	Mostly wild-caught in US Pacific fisheries.	Froese & Pauly 2021
+Osteomugil engeli	Engel's mullet	Marine	Wild Indo-Pacific mullet. Not farmed.	Froese & Pauly 2021
+Pagrus auratus	Australasian snapper	Marine	Wild Australian and New Zealand fishery. Very closely related to red seabream (P. major) and may not be separable from it with 12S.	Froese & Pauly 2021; Tabata & Taniguchi 2000
+Paralabrax	Sea bass	Marine	Includes kelp bass and sand bass. Wild California sport fish. Not farmed.	Froese & Pauly 2021
+Paralichthyidae	Large-tooth flounders	Marine	Mostly wild marine flatfishes. Olive flounder (Paralichthys olivaceus) is farmed in Korea.	Froese & Pauly 2021; Kim et al. 2016
+Paralichthys	Flounder	Marine	Includes summer flounder. Mostly wild fisheries. Olive flounder (P. olivaceus) is farmed in Korea.	Froese & Pauly 2021; Kim et al. 2016
+Paralichthys californicus	California halibut	Marine	Wild California fishery. Not farmed.	Froese & Pauly 2021
+Parapristipoma trilineatum	Chicken grunt	Marine	Wild East Asian fishery. Also hatchery-reared and released in Japan.	Froese & Pauly 2021
+Parupeneus	Goatfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Parupeneus crassilabris	Doublebar goatfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Parupeneus multifasciatus	Manybar goatfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Peprilus	Butterfish	Marine	Wild Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Pleuronectidae	Flounders	Marine	Mostly wild marine fisheries in the US.	Froese & Pauly 2021
+Pomatomus saltator	Bluefish	Marine	Wild Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Prionotus carolinus	Northern searobin	Marine	"Wild Atlantic fish, mostly caught as bycatch. Not farmed."	Froese & Pauly 2021
+Pristipomoides	Jobfish	Marine	Includes opakapaka. Wild Hawaiian and Pacific fishery. Not farmed.	Froese & Pauly 2021
+Pseudocaranx dentex	White trevally	Marine	Wild reef and pelagic fish. Also farmed in Japan as striped jack (shima-aji).	Froese & Pauly 2021
+Rajidae	Skates	Marine	Wild fishery for bait and food. Not farmed.	Froese & Pauly 2021
+Rhomboplites aurorubens	Vermilion snapper	Marine	Wild Gulf and Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Scarus	Parrotfish	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Scarus psittacus	Palenose parrotfish	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Sciaenidae	Drums and croakers	Marine	"Includes croakers, weakfish, and red drum. Mostly wild fisheries. Some species, such as large yellow croaker and red drum, are farmed."	Froese & Pauly 2021; Posadas 2024
+Sciaenops ocellatus	Red drum	Marine	"Since 2004, recreational catch made up 82% of US supply, aquaculture 17%, and commercial landings about 1%."	Posadas 2024
+Scomber	Mackerel	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Scomber scombrus	Atlantic mackerel	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Scomberomorus	Spanish mackerel	Marine	Includes king and Spanish mackerel. Wild fishery. Not farmed.	Froese & Pauly 2021
+Scombridae	Mackerels and tunas	Marine	Includes mackerels and tunas. Mostly wild fisheries.	Froese & Pauly 2021
+Scorpaenichthys marmoratus	Cabezon	Marine	Wild California nearshore fishery. Not farmed.	Froese & Pauly 2021
+Sebastes	Rockfish	Marine	Mostly wild Pacific fishery. Korean rockfish (S. schlegelii) is farmed in Korea.	Froese & Pauly 2021; Kim et al. 2016
+Sebastes carnatus	Gopher rockfish	Marine	Wild California fishery. Not farmed.	Froese & Pauly 2021
+Sebastidae	Rockfish family	Marine	Mostly wild Pacific fishery. Korean rockfish (Sebastes schlegelii) is farmed in Korea.	Froese & Pauly 2021; Kim et al. 2016
+Selar crumenophthalmus	Bigeye scad	Marine	Wild Hawaiian and Indo-Pacific fishery. Not farmed.	Froese & Pauly 2021
+Selaroides leptolepis	Yellowstripe scad	Marine	Wild Indo-Pacific fishery. Not farmed.	Froese & Pauly 2021
+Semicossyphus pulcher	California sheephead	Marine	Wild California reef fishery. Not farmed.	Froese & Pauly 2021
+Serranidae	Sea basses and groupers	Marine	Includes groupers and sea basses. Mostly wild fisheries. Some groupers are farmed in Asia.	Froese & Pauly 2021
+Siganus	Rabbitfish	Marine	Mostly wild Indo-Pacific reef fishes. Some are farmed in Asia.	Froese & Pauly 2021
+Stenotomus chrysops	Scup	Marine	Wild Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Tautoga onitis	Tautog	Marine	Wild Atlantic fishery. Not farmed.	Froese & Pauly 2021
+Tautogolabrus adspersus	Cunner	Marine	Wild Atlantic fish with a minor fishery. Not farmed.	Froese & Pauly 2021
+Thalassoma	Wrasse	Marine	Wild reef fishes. Not farmed.	Froese & Pauly 2021
+Thalassoma purpureum	Surge wrasse	Marine	Wild reef fish. Not farmed.	Froese & Pauly 2021
+Thunnus	Tuna	Marine	"Mostly wild-caught. Some bluefin tuna is ranched, meaning wild-caught and fattened in pens."	Froese & Pauly 2021
+Trachurus	Jack mackerel	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Trichiurus lepturus	Largehead hairtail	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021
+Urophycis	Phycid hake	Marine	Includes red and spotted hake. Wild fishery. Not farmed.	Froese & Pauly 2021
+Xiphias gladius	Swordfish	Marine	Wild fishery. Not farmed.	Froese & Pauly 2021

@@ -1,0 +1,28 @@
+current_site_label,shorthand_for_figures,state,region
+MA_Boston_DITPN,"Boston DITP North, MA",MA,Northeast
+MA_Boston_DITPS,"Boston DITP South, MA",MA,Northeast
+IA_Ottumwa_WPCF,"Ottumwa WPCF, IA",IA,Midwest
+IL_Chicago_A,"Chicago (CHI-A), IL",IL,Midwest
+IL_Chicago_B,"Chicago (CHI-B), IL",IL,Midwest
+IL_Chicago_C,"Chicago (CHI-C), IL",IL,Midwest
+IL_Chicago_D1,"Chicago (CHI-D1), IL",IL,Midwest
+IL_Chicago_D2,"Chicago (CHI-D2), IL",IL,Midwest
+MO_Columbia_RWWTP,"Columbia WWTP, MO",MO,Midwest
+MO_KC_BlueRiver,"Kansas City Blue River WWTP, MO",MO,Midwest
+MO_KC_Westside,"Kansas City Westside WWTP, MO",MO,Midwest
+MO_Milan_WWTP,"Milan WWTF, MO",MO,Midwest
+MO_Monett_WWTP,"Monett WWTP, MO",MO,Midwest
+MO_STL_Bissell,"Bissell Point WWTP, MO",MO,Midwest
+MO_STL_Coldwater_Florissant,"Coldwater Creek WWTP, MO",MO,Midwest
+MO_STL_Lemay,"Lemay WWTP, MO",MO,Midwest
+MO_STL_MORiver,"Missouri River WWTP, MO",MO,Midwest
+FL_Miami_CDWWTP,"Miami-Dade CDWWTP, FL",FL,South
+CA_SouthernCalifornia,"Southern California, CA",CA,West
+CA_Ontario_RP1,"Ontario, CA",CA,West
+CA_PaloAlto_RWQCP,"Palo Alto RWQCP, CA",CA,West
+CA_Riverside_RWQCP,"Riverside WQCP, CA",CA,West
+CA_Sacramento_EWRRF,"Sacramento, CA",CA,West
+HI_HawaiiCounty,"Hawaii County, HI",HI,West
+HI_KauaiCounty,"Kauai County, HI",HI,West
+ID_Boise_LW,"Boise RWF, ID",ID,West
+TX_Houston_SewershedA,"Houston Sewershed A, TX",TX,South

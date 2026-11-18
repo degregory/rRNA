@@ -1,0 +1,28 @@
+Site,Region,State,Population served,Sample type,Sewer system type,Local collection partner,Collection start,Collection end,n samples
+"Boston DITP North, MA",Northeast,MA,1.1M,Composite sampling,Combined sewer system,SB - Jeff Kaufman,4/2/2025,9/1/2026,70
+"Boston DITP South, MA",Northeast,MA,1.4M,Composite sampling,Combined sewer system,SB - Jeff Kaufman,4/2/2025,9/1/2026,72
+"Ottumwa WPCF, IA",Midwest,IA,26k,Composite sampling,Combined sewer system,MU - Marc Johnson,4/2/2025,9/2/2026,72
+"Chicago (CHI-A), IL",Midwest,IL,1.3M,Composite sampling,Combined sewer system,UIC - Rachel Poretsky,3/30/2025,9/2/2026,74
+"Chicago (CHI-B), IL",Midwest,IL,1.1M,Composite sampling,Combined sewer system,UIC - Rachel Poretsky,3/30/2025,9/2/2026,72
+"Chicago (CHI-C), IL",Midwest,IL,NA,Passive composite sampling,Sanitary sewer system,UIC - Rachel Poretsky,3/31/2025,9/3/2026,70
+"Chicago (CHI-D1), IL",Midwest,IL,1.1M,Composite sampling,Combined sewer system,UIC - Rachel Poretsky,3/30/2025,9/2/2026,73
+"Chicago (CHI-D2), IL",Midwest,IL,1.1M,Composite sampling,Combined sewer system,UIC - Rachel Poretsky,3/30/2025,9/2/2026,72
+"Bissell Point WWTP, MO",Midwest,MO,307k,Composite sampling,Combined sewer system,MU - Marc Johnson,6/3/2025,9/1/2026,68
+"Coldwater Creek WWTP, MO",Midwest,MO,149k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,6/3/2025,9/1/2026,70
+"Columbia WWTP, MO",Midwest,MO,120k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,4/1/2025,9/1/2026,73
+"Kansas City Blue River WWTP, MO",Midwest,MO,490k,Composite sampling,Combined sewer system,MU - Marc Johnson,8/12/2025,8/25/2026,60
+"Kansas City Westside WWTP, MO",Midwest,MO,61k,Composite sampling,Combined sewer system,MU - Marc Johnson,10/1/2025,8/24/2026,51
+"Lemay WWTP, MO",Midwest,MO,451k,Composite sampling,Combined sewer system,MU - Marc Johnson,6/3/2025,9/1/2026,69
+"Milan WWTF, MO",Midwest,MO,1.8k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,4/2/2025,8/25/2026,36
+"Missouri River WWTP, MO",Midwest,MO,175k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,6/20/2025,9/1/2026,64
+"Monett WWTP, MO",Midwest,MO,9.1k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,6/10/2025,8/31/2026,62
+"Miami-Dade CDWWTP, FL",South,FL,900k,Composite sampling,Sanitary sewer system,UM - Helena Solo-Gabriele,1/12/2026,8/31/2026,32
+"Houston Sewershed A, TX",South,TX,551k,Composite sampling,Sanitary sewer system,Rice - Lauren Stadler,3/31/2025,8/31/2026,64
+"Ontario, CA",West,CA,890k,Composite sampling,Sanitary sewer system,UCR - Jason Rothman,8/25/2025,8/31/2026,61
+"Palo Alto RWQCP, CA",West,CA,236k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,8/25/2025,9/1/2026,52
+"Riverside WQCP, CA",West,CA,350k,Composite sampling,Sanitary sewer system,UCR - Jason Rothman,3/31/2025,9/3/2026,143
+"Sacramento, CA",West,CA,1.6M,Composite sampling,Sanitary sewer system,UCR - Jason Rothman,8/28/2025,9/3/2026,52
+"Southern California, CA",West,CA,NA,Composite sampling,Sanitary sewer system,UCR - Jason Rothman,4/16/2025,9/2/2026,134
+"Hawaii County, HI",West,HI,33k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,4/21/2025,8/31/2026,69
+"Kauai County, HI",West,HI,12k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,4/23/2025,9/2/2026,61
+"Boise RWF, ID",West,ID,270k,Composite sampling,Sanitary sewer system,MU - Marc Johnson,3/31/2025,8/31/2026,71
